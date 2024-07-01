@@ -1,7 +1,7 @@
 import pandas as pd
-import numpy as np
-from datetime import datetime
-import re
+import requests
+from bs4 import BeautifulSoup
+import time
 
 # seperate ()
 def split_city_year(city):
@@ -15,7 +15,7 @@ df = pd.read_csv('code.csv')
 df_base = pd.DataFrame()
 year = 2024
 
-for idx, row in tqdm(df.iterrows()):
+for idx, row in df.iterrows():
     name = row.iloc[1]
     code = row.iloc[0]
     label = row.iloc[4].lower()
