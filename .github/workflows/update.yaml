@@ -30,7 +30,7 @@ jobs:
         run: pip install pandas requests datetime numpy
 
       - name: Run Python
-        run: python ./code/update_max_temperature.py
+        run: python new_month_data.py
 
       - name: Commit and push if content changed
         env:
