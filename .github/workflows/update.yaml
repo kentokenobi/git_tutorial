@@ -30,7 +30,7 @@ jobs:
         run: pip install pandas requests datetime numpy beautifulsoup4
 
       - name: Run Python
-        run: python new_month_data_add.py
+        run: python new_month_data.py
 
       - name: Commit and push if content changed
         env:
