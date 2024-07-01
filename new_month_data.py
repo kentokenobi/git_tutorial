@@ -10,6 +10,8 @@ def split_city_year(city):
         return match.groups()
     return city, None
 
+df = pd.read_csv('code.csv')
+
 df_base = pd.DataFrame()
 year = 2024
 

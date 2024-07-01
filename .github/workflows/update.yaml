@@ -27,7 +27,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install necessary Python packages
-        run: pip install pandas requests datetime numpy
+        run: pip install pandas requests datetime numpy 
 
       - name: Run Python
         run: python new_month_data.py
